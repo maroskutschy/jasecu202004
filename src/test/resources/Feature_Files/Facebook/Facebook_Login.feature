@@ -2,6 +2,7 @@ Feature: Login to Facebook
 
   Scenario: Successful Login to Facebook with specified credentials
 
+    # adding comment
     Given I successfully login to facebook with email "jasecuframework@gmail.com" and password "Jasecu12"
     Then Facebook Welcome Page is successfully displayed
 
