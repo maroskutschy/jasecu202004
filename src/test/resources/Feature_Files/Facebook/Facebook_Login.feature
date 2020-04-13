@@ -5,6 +5,7 @@ Feature: Login to Facebook
     # adding comment
     Given I successfully login to facebook with email "jasecuframework@gmail.com" and password "Jasecu12"
     Then Facebook Welcome Page is successfully displayed
+    And I make Percy Visual Test validation with screenshot name: "Welcome Page"
 
   @LoginTest
   Scenario: Successful Login to Facebook with default credentials
