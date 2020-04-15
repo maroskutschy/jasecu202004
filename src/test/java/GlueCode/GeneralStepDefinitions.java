@@ -42,6 +42,7 @@ public class GeneralStepDefinitions {
                 prefs.put("profile.default_content_setting_values.notifications", 2);
                 // Create object of ChromeOption class
                 ChromeOptions options = new ChromeOptions();
+                options.setPageLoadStrategy(PageLoadStrategy.NONE);
                 // Set the experimental option
                 options.setExperimentalOption("prefs", prefs);
                 driver = new ChromeDriver(options);
